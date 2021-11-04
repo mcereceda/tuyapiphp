@@ -4,9 +4,10 @@
 
 	Class Mqtt
 	{
-		public function __construct( $config )
+		public function __construct( $config, $token )
 		{
 			$this->_config = $config;
+			$this->_token = $token;
 		}
 		
 		public function __call( $name , $args = [ ] )
