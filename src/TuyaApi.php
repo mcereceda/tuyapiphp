@@ -23,6 +23,11 @@
 			return new Devices( $this->_config , $token );
 		}
 		
+		public function mqtt( $token )
+		{
+			return new Mqtt( $this->_config , $token );
+		}
+		
 		public function token( )
 		{
 			return new Token( $this->_config );
