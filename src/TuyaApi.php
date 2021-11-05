@@ -18,6 +18,11 @@
 			$this->_config = array_merge( $this->_config , $config );
 		}
 		
+		public function users( $token )
+		{
+			return new Users( $this->_config , $token );
+		}
+		
 		public function devices( $token )
 		{
 			return new Devices( $this->_config , $token );
