@@ -20,8 +20,10 @@
 
 		protected $_endpoints = 
 		[
-			'get_users'		=> '/v1.0/iot-02/users',
-			'get_usersb'	=> '/v1.1/iot-02/users',
-			'get_user'		=> '/v1.0/users/{user_id}/infos'
+			'get_users'				=> '/v1.0/iot-02/users',
+			'get_usersb'			=> '/v1.1/iot-02/users',
+			'get_user'				=> '/v1.0/users/{user_id}/infos',
+			'put_reset_user_pass'	=> '/v1.0/iot-02/users/reset-password',
+			'put_reset_user_passb'	=> '/v1.0/users/reset-password'
 		];
 	}
