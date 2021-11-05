@@ -20,8 +20,8 @@
 
 		protected $_endpoints = 
 		[
-			'get_users'		=> '/v1.0/iot-02/users'
-			'get_usersb'	=> '/v1.1/iot-02/users'
+			'get_users'		=> '/v1.0/iot-02/users',
+			'get_usersb'	=> '/v1.1/iot-02/users',
 			'get_user'		=> '/v1.0/iot-02/users/{user_id}'
 		];
 	}
