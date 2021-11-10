@@ -51,6 +51,7 @@
 			'get_webrtc_config'		=>	'/v1.0/users/{uid}/devices/{device_id}/webrtc-configs',
 			'delete_device'			=>	'/v1.0/devices/{device_id}' ,
 			'delete_user'			=>	'/v1.0/devices/{device_id}/users/{user_id}' ,
-			'delete_group'			=>	'/v1.0/device-groups/{group_id}'
+			'delete_group'			=>	'/v1.0/device-groups/{group_id}',
+			'post_send_command'		=>	'/v1.0/devices/{device_id}/commands'
 		];
 	}
