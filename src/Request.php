@@ -59,10 +59,10 @@
 			curl_setopt( $ch , CURLOPT_TIMEOUT , 30 );
 			curl_setopt( $ch , CURLINFO_HEADER_OUT , true );
 			$result = curl_exec( $ch );
-			$httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+			$postfields = curl_getinfo($ch, CURLOPT_POSTFIELDS);
 			$return = json_decode( $result , $this->_config[ 'associative' ] );
 			$this->_debug->output( 'Result:' , $return );
-			$this->_debug->output( 'httpcode:' , $httpcode );
+			$this->_debug->output( 'postfields:' , $postfields );
 			return $return;
 		}
 		
