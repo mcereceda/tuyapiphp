@@ -42,8 +42,8 @@
 			$this->_debug->output( 'Headers:' , $this->_headers );
 			if ( $this->_body )
 			{
-				$this->_debug->output( 'Payload:' , json_decode( 
-							$this->_body , $this->_config[ 'associative' ] ) );
+				$this->_debug->output( 'Payload:' , 
+							$this->_body , $this->_config[ 'associative' ]  );
 			}
 			$ch = curl_init( );
 			curl_setopt( $ch , CURLOPT_URL , $this->_config[ 'baseUrl' ] . $this->_endpoint );
