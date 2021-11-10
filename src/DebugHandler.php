@@ -12,6 +12,7 @@
 	
 		public function output( $msg , $data = null )
 		{
+    		Log::info(print_r('Debugging', true));
 			if ( @$this->_config[ 'debug' ] != true ){ return; }
 			if ( $data )
 			{
